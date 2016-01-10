@@ -40,6 +40,7 @@ This package works with any CI environments. Instructions for `Travis CI`_:
 2. Add ``pip install coveralls`` to ``install`` section of ``.travis.yml``
 3. Make sure you run your tests with coverage during the build in ``script`` part. Example::
 
+.. code:: python
     # --source specifies what packages to cover, you probably want to use that option
     script:
       coverage run --source=yourpackagename setup.py test
